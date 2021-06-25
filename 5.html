@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        "use strict";
+        let a = 4
+        let b = 8
+
+        function addition(a, b) {
+            return a + b;
+        }
+
+        function subtraction(a, b) {
+            return a - b;
+        }
+
+        function division(a, b) {
+            return a / b;
+        }
+
+        function multiplication(a, b) {
+            return a * b;
+        }
+
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case "+":
+                    return addition(arg1, arg2);
+                case "-":
+                    return subtraction(arg1, arg2);
+                case "/":
+                    return division(arg1, arg2);
+                case "*":
+                    return multiplication(arg1, arg2);
+                default:
+                    return "нет такой операции";
+            }
+        }
+
+        console.log(mathOperation(a, b, "+"));
+        console.log(mathOperation(a, b, "-"));
+        console.log(mathOperation(a, b, "/"));
+        console.log(mathOperation(a, b, "*"));
+        console.log(mathOperation(a, b, "none"));
+    </script>
+</body>
+</html>
